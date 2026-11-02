@@ -1,0 +1,23 @@
+{
+    "nivel": "aritmetica",
+    "questoes": [
+        {
+            "id": 1,
+            "pergunta": "Quanto é 25 * 4?",
+            "resposta": 100,
+            "dificuldade": "facil"
+        },
+        {
+            "id": 2,
+            "pergunta": "Quanto é 144 / 12?",
+            "resposta": 12,
+            "dificuldade": "facil"
+        },
+        {
+            "id": 3,
+            "pergunta": "Quanto é 15 * 8 + 20?",
+            "resposta": 140,
+            "dificuldade": "medio"
+        }
+    ]
+}
