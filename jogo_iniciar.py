@@ -55,9 +55,6 @@ def exec_nivel(): # Função que executa a logica do código
         if inc_acerto >= 2:
             print("Parabens! Você passou para a fase: {}".format([q2][0]))
 
-        else:
-            print("Você não passou de fase. Tente novamente!")
-            return
 
 def receber_nivel(atualizacao, inc_acerto):
 
