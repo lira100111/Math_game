@@ -1,4 +1,23 @@
 {
     "nivel": "matrizes",
-    "questoes": []
+    "questoes": [
+        {
+            "id": 1,
+            "pergunta": "Qual é a soma dos elementos da primeira linha da matriz [[2, 3], [4, 5]]?",
+            "resposta": 5,
+            "dificuldade": "facil"
+        },
+        {
+            "id": 2,
+            "pergunta": "Qual é o resultado da soma dos elementos da diagonal principal da matriz [[1, 2], [3, 4]]?",
+            "resposta": 5,
+            "dificuldade": "facil"
+        },
+        {
+            "id": 3,
+            "pergunta": "Qual é o resultado da multiplicação da matriz [[1, 2], [3, 4]] por 2, considerando a soma de todos os elementos da matriz resultante?",
+            "resposta": 20,
+            "dificuldade": "medio"
+        }
+    ]
 }

@@ -1,4 +1,23 @@
 {
     "nivel": "equacoes",
-    "questoes": []
+    "questoes": [
+        {
+            "id": 1,
+            "pergunta": "Resolva: x + 8 = 15. Qual o valor de x?",
+            "resposta": 7,
+            "dificuldade": "facil"
+        },
+        {
+            "id": 2,
+            "pergunta": "Resolva: 3x = 27. Qual o valor de x?",
+            "resposta": 9,
+            "dificuldade": "facil"
+        },
+        {
+            "id": 3,
+            "pergunta": "Resolva: 2x + 5 = 21. Qual o valor de x?",
+            "resposta": 8,
+            "dificuldade": "medio"
+        }
+    ]
 }

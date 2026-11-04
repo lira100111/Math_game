@@ -1,4 +1,23 @@
 {
     "nivel": "funcoes",
-    "questoes": []
+    "questoes": [
+        {
+            "id": 1,
+            "pergunta": "Dada a função f(x) = 2x + 3, qual é o valor de f(4)?",
+            "resposta": 11,
+            "dificuldade": "facil"
+        },
+        {
+            "id": 2,
+            "pergunta": "Dada a função f(x) = 3x - 5, qual é o valor de f(5)?",
+            "resposta": 10,
+            "dificuldade": "facil"
+        },
+        {
+            "id": 3,
+            "pergunta": "Dada a função f(x) = x² + 2x, qual é o valor de f(3)?",
+            "resposta": 15,
+            "dificuldade": "medio"
+        }
+    ]
 }

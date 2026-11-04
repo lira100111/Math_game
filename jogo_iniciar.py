@@ -3,6 +3,12 @@ import json
 import random
 from pathlib import Path
 
+questoes_nivel = [("Aritmética", "aritmética.json"),
+                  ("Equações", "equações.json"),
+                  ("Funções", "funções.json"),
+                  ("Matrizes", "matrizes.json"),
+                  ("Determinantes", "determinantes.json")]
+
 def jogo_iniciar():
     print(" Vamos ao desafio matemático " )
     print("### Consistirá em 5 níveis de atividades que serão realizadas. ###")
@@ -19,15 +25,18 @@ def jogo_iniciar():
     exec_nivel()
 
 def exec_nivel(): # Função que executa a logica do código
-    inc_acerto = 0
-    inc_erro = 0
-    questoes_nivel = ["Aritmética", "Equações", "Funções", "Matrizes", "Determinantes"]
 
+    atualizacao = 0
+    while atualizacao is not None:
+        inc_acerto = 0
+        inc_erro = 0
 
-    for q1 in questoes_nivel:
-        print("Sua questao: {}".format(q1))
+        nome_nivel = questoes_nivel[atualizacao][0]
+        arquivo_json = questoes_nivel[atualizacao][1]
+
+        print("Sua questao: {}".format(nome_nivel))
         for q2 in range(3):
-            questao = selecionar_questao()
+            questao = selecionar_questao(arquivo_json)
             pergunta_q = float(input("{q} - {pergunta} ".format(q = q2+1, pergunta = questao["pergunta"])))
 
             if pergunta_q == questao["resposta"]:
@@ -36,16 +45,46 @@ def exec_nivel(): # Função que executa a logica do código
 
             else:
                 print("Erro!")
-                inc_erro =+ 1
+                inc_erro = inc_erro + 1
 
-def carregar_questoes():
-    caminho = Path(__file__).parent/ "questões" / "aritmética.json"
+            print("Acertos: {}".format(inc_acerto))
+            print("Erros: {}".format(inc_erro))
+
+        atualizacao = receber_nivel(atualizacao, inc_acerto)
+
+        if inc_acerto >= 2:
+            print("Parabens! Você passou para a fase: {}".format([q2][0]))
+
+        else:
+            print("Você não passou de fase. Tente novamente!")
+            return
+
+def receber_nivel(atualizacao, inc_acerto):
+
+    if inc_acerto >= 2:
+        atualizacao = atualizacao + 1
+
+        if atualizacao < len(questoes_nivel):
+            print("Avançando para: {}".format(questoes_nivel[atualizacao][0]))
+            return atualizacao
+        else:
+            print("Parabéns!")
+            return None
+
+    else:
+        print("Você não passou de fase. Voltando ao início...")
+        ## Aqui a ideia é fazer a atualização do estado da tupla para que as questões sejam baseadas no nível
+
+def carregar_questoes(arquivo_json):
+    caminho = Path(__file__).parent/ "questões" / arquivo_json
+
     with open(caminho, "r", encoding="utf-8") as arquivo:
         dados = json.load(arquivo)
+
     return dados["questoes"]
 
-def selecionar_questao():
-    questoes = carregar_questoes()
+def selecionar_questao(arquivo_json):
+    questoes = carregar_questoes(arquivo_json)
     questao = random.choice(questoes)
 
     return questao

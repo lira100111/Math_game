@@ -1,4 +1,23 @@
 {
     "nivel": "determinantes",
-    "questoes": []
+    "questoes": [
+        {
+            "id": 1,
+            "pergunta": "Qual é o determinante da matriz [[2, 0], [0, 3]]?",
+            "resposta": 6,
+            "dificuldade": "facil"
+        },
+        {
+            "id": 2,
+            "pergunta": "Qual é o determinante da matriz [[1, 2], [3, 4]]?",
+            "resposta": -2,
+            "dificuldade": "facil"
+        },
+        {
+            "id": 3,
+            "pergunta": "Qual é o determinante da matriz [[5, 2], [3, 1]]?",
+            "resposta": -1,
+            "dificuldade": "medio"
+        }
+    ]
 }
