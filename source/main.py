@@ -9,3 +9,4 @@ if __name__ == '__main__':
     menu.menu()
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
+### É NECESSÁRIO RODAR O PROGRAMA NA MAIN ###
