@@ -37,7 +37,14 @@ def exec_nivel(): # Função que executa a logica do código
         print("Sua questao: {}".format(nome_nivel))
         for q2 in range(3):
             questao = selecionar_questao(arquivo_json)
-            pergunta_q = float(input("{q} - {pergunta} ".format(q = q2+1, pergunta = questao["pergunta"])))
+
+            try:
+                pergunta_q = float(input("{q} - {pergunta} ".format(q = q2+1, pergunta = questao["pergunta"])))
+
+
+            except ValueError:
+                print("Digite uma resposta numérica válida!")
+                continue
 
             if pergunta_q == questao["resposta"]:
                 print("Acerto!")
@@ -73,7 +80,7 @@ def receber_nivel(atualizacao, inc_acerto):
         ## Aqui a ideia é fazer a atualização do estado da tupla para que as questões sejam baseadas no nível
 
 def carregar_questoes(arquivo_json):
-    caminho = Path(__file__).parent/ "questões" / arquivo_json
+    caminho = Path(__file__).resolve().parent.parent/ "questões" / arquivo_json
 
     with open(caminho, "r", encoding="utf-8") as arquivo:
         dados = json.load(arquivo)

@@ -4,14 +4,24 @@
 from multiprocessing.resource_sharer import stop
 import jogo_iniciar
 
+
 def menu():
     print(" Seja bem-vindo(a) ao Math_Game! ")
-    escolha  = input(" Você deseja participar do jogo? (S/n): ")
-    if escolha == "S" or escolha == "s" and escolha == "N" or escolha == "n":
+    escolha = input("Você deseja participar do jogo? (S/n): ")
+
+    while escolha not in ("S", "s", "N", "n"):
+        print("Resposta incorreta! Tente novamente...")
+        escolha = input("Você deseja participar do jogo? (S/n): ")
+
+    return escolha
+
+def escolha_jogador():
+    escolha = menu()
+    if escolha == "S" or escolha == "s":
         jogo_iniciar.jogo_iniciar()
 
-    while escolha != "S" or "s" and escolha != "N" or "n":
-        escolha_2 = input("Resposta incorreta! Tente novamente.. (S/N):" )
+    elif escolha == "N" or escolha == "n":
+        print("Saindo...")
 
-        if escolha_2 == "S" or escolha_2 == "s" and escolha_2 == "N" or escolha_2 == "n":
-            jogo_iniciar.jogo_iniciar()
+
+escolha_jogador()
