@@ -7,11 +7,11 @@ import jogo_iniciar
 
 def menu():
     print(" Seja bem-vindo(a) ao Math_Game! ")
-    escolha = input("Você deseja participar do jogo? (S/n): ")
+    escolha = input("Pressione (S/s) para iniciar o jogo: ")
 
     while escolha not in ("S", "s", "N", "n"):
         print("Resposta incorreta! Tente novamente...")
-        escolha = input("Você deseja participar do jogo? (S/n): ")
+        escolha = input("Pressione (S/s) para iniciar o jogo: ")
 
     return escolha
 
@@ -20,8 +20,5 @@ def escolha_jogador():
     if escolha == "S" or escolha == "s":
         jogo_iniciar.jogo_iniciar()
 
-    elif escolha == "N" or escolha == "n":
-        print("Saindo...")
-
-
 escolha_jogador()
+jogo_iniciar.jogo_iniciar()

@@ -77,6 +77,13 @@ def receber_nivel(atualizacao, inc_acerto):
 
     else:
         print("Você não passou de fase. Voltando ao início...")
+        escolha_nova = input("Deseja jogar novamente? (S/N)")
+        if escolha_nova == "S" or escolha_nova == "s":
+            jogo_iniciar()
+        else:
+            print("Obrigado por jogar! Até a próxima!")
+            exit()
+
         ## Aqui a ideia é fazer a atualização do estado da tupla para que as questões sejam baseadas no nível
 
 def carregar_questoes(arquivo_json):
