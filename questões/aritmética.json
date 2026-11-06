@@ -1,23 +1,64 @@
 {
-    "nivel": "aritmetica",
     "questoes": [
         {
             "id": 1,
-            "pergunta": "Quanto é 25 * 4?",
-            "resposta": 100,
-            "dificuldade": "facil"
+            "pergunta": "Quanto é 18 + 27?",
+            "resposta": 45
         },
         {
             "id": 2,
-            "pergunta": "Quanto é 144 / 12?",
-            "resposta": 12,
-            "dificuldade": "facil"
+            "pergunta": "Quanto é 64 - 29?",
+            "resposta": 35
         },
         {
             "id": 3,
-            "pergunta": "Quanto é 15 * 8 + 20?",
-            "resposta": 140,
-            "dificuldade": "medio"
+            "pergunta": "Quanto é 7 × 8?",
+            "resposta": 56
+        },
+        {
+            "id": 4,
+            "pergunta": "Quanto é 144 ÷ 12?",
+            "resposta": 12
+        },
+        {
+            "id": 5,
+            "pergunta": "Qual é o resultado de 15 + 6 × 3?",
+            "resposta": 33
+        },
+        {
+            "id": 6,
+            "pergunta": "Quanto é (20 - 8) × 4?",
+            "resposta": 48
+        },
+        {
+            "id": 7,
+            "pergunta": "Qual é 25% de 200?",
+            "resposta": 50
+        },
+        {
+            "id": 8,
+            "pergunta": "Quanto é 3² + 4²?",
+            "resposta": 25
+        },
+        {
+            "id": 9,
+            "pergunta": "Quanto é 120 ÷ 5 + 7?",
+            "resposta": 31
+        },
+        {
+            "id": 10,
+            "pergunta": "Qual é o dobro de 37?",
+            "resposta": 74
+        },
+        {
+            "id": 11,
+            "pergunta": "Quanto é 5 × (9 + 3)?",
+            "resposta": 60
+        },
+        {
+            "id": 12,
+            "pergunta": "Quanto é 150 - 4 × 25?",
+            "resposta": 50
         }
     ]
 }
