@@ -1,23 +1,64 @@
 {
-    "nivel": "determinantes",
     "questoes": [
         {
             "id": 1,
-            "pergunta": "Qual é o determinante da matriz [[2, 0], [0, 3]]?",
-            "resposta": 6,
-            "dificuldade": "facil"
+            "pergunta": "Calcule o determinante da matriz [[2, 0], [0, 3]].",
+            "resposta": 6
         },
         {
             "id": 2,
-            "pergunta": "Qual é o determinante da matriz [[1, 2], [3, 4]]?",
-            "resposta": -2,
-            "dificuldade": "facil"
+            "pergunta": "Calcule o determinante da matriz [[1, 2], [3, 4]].",
+            "resposta": -2
         },
         {
             "id": 3,
-            "pergunta": "Qual é o determinante da matriz [[5, 2], [3, 1]]?",
-            "resposta": -1,
-            "dificuldade": "medio"
+            "pergunta": "Calcule o determinante da matriz [[5, 1], [2, 3]].",
+            "resposta": 13
+        },
+        {
+            "id": 4,
+            "pergunta": "Calcule o determinante da matriz [[4, 2], [1, 1]].",
+            "resposta": 2
+        },
+        {
+            "id": 5,
+            "pergunta": "Calcule o determinante da matriz [[3, 5], [2, 4]].",
+            "resposta": 2
+        },
+        {
+            "id": 6,
+            "pergunta": "Calcule o determinante da matriz [[6, 2], [3, 1]].",
+            "resposta": 0
+        },
+        {
+            "id": 7,
+            "pergunta": "Calcule o determinante da matriz [[7, 0], [0, 2]].",
+            "resposta": 14
+        },
+        {
+            "id": 8,
+            "pergunta": "Calcule o determinante da matriz [[2, 3], [1, 5]].",
+            "resposta": 7
+        },
+        {
+            "id": 9,
+            "pergunta": "Calcule o determinante da matriz [[4, 3], [2, 2]].",
+            "resposta": 2
+        },
+        {
+            "id": 10,
+            "pergunta": "Calcule o determinante da matriz [[1, 5], [2, 7]].",
+            "resposta": -3
+        },
+        {
+            "id": 11,
+            "pergunta": "Calcule o determinante da matriz [[3, 2], [6, 4]].",
+            "resposta": 0
+        },
+        {
+            "id": 12,
+            "pergunta": "Calcule o determinante da matriz [[8, 1], [3, 2]].",
+            "resposta": 13
         }
     ]
 }
