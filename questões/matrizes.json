@@ -1,23 +1,64 @@
 {
-    "nivel": "matrizes",
     "questoes": [
         {
             "id": 1,
-            "pergunta": "Qual é a soma dos elementos da primeira linha da matriz [[2, 3], [4, 5]]?",
-            "resposta": 5,
-            "dificuldade": "facil"
+            "pergunta": "A = [[1, 2], [3, 4]] e B = [[2, 1], [0, 3]]. Qual é o elemento da 1ª linha e 1ª coluna de A + B?",
+            "resposta": 3
         },
         {
             "id": 2,
-            "pergunta": "Qual é o resultado da soma dos elementos da diagonal principal da matriz [[1, 2], [3, 4]]?",
-            "resposta": 5,
-            "dificuldade": "facil"
+            "pergunta": "A = [[1, 2], [3, 4]] e B = [[2, 1], [0, 3]]. Qual é o elemento da 2ª linha e 2ª coluna de A + B?",
+            "resposta": 7
         },
         {
             "id": 3,
-            "pergunta": "Qual é o resultado da multiplicação da matriz [[1, 2], [3, 4]] por 2, considerando a soma de todos os elementos da matriz resultante?",
-            "resposta": 20,
-            "dificuldade": "medio"
+            "pergunta": "A = [[5, 4], [3, 2]] e B = [[1, 2], [1, 1]]. Qual é o elemento da 1ª linha e 2ª coluna de A - B?",
+            "resposta": 2
+        },
+        {
+            "id": 4,
+            "pergunta": "A = [[2, 0], [1, 3]]. Qual é o elemento da 2ª linha e 1ª coluna de 2A?",
+            "resposta": 2
+        },
+        {
+            "id": 5,
+            "pergunta": "A = [[1, 2], [0, 1]]. Qual é a soma dos elementos da 1ª linha?",
+            "resposta": 3
+        },
+        {
+            "id": 6,
+            "pergunta": "A = [[3, 1], [2, 4]]. Qual é o elemento da 2ª linha e 1ª coluna?",
+            "resposta": 2
+        },
+        {
+            "id": 7,
+            "pergunta": "A = [[2, 3], [4, 5]]. Qual é o elemento da 1ª linha e 2ª coluna de 3A?",
+            "resposta": 9
+        },
+        {
+            "id": 8,
+            "pergunta": "A = [[7, 2], [5, 1]] e B = [[3, 1], [2, 4]]. Qual é o elemento da 1ª linha e 1ª coluna de A - B?",
+            "resposta": 4
+        },
+        {
+            "id": 9,
+            "pergunta": "A = [[1, 0], [0, 1]]. Qual é o elemento da 2ª linha e 2ª coluna?",
+            "resposta": 1
+        },
+        {
+            "id": 10,
+            "pergunta": "A = [[2, 1], [3, 2]]. Qual é a soma dos elementos da diagonal principal?",
+            "resposta": 4
+        },
+        {
+            "id": 11,
+            "pergunta": "A = [[4, 2], [1, 3]] e B = [[1, 1], [2, 2]]. Qual é o elemento da 2ª linha e 1ª coluna de A + B?",
+            "resposta": 3
+        },
+        {
+            "id": 12,
+            "pergunta": "A = [[2, 4], [6, 8]]. Qual é o elemento da 1ª linha e 2ª coluna de A ÷ 2?",
+            "resposta": 2
         }
     ]
 }
