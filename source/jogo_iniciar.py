@@ -25,9 +25,10 @@ def jogo_iniciar():
     exec_nivel()
 
 def exec_nivel(): # Função que executa a logica do código
-
     atualizacao = 0
+    
     while atualizacao is not None:
+        list_quest_repet = [] # Lista para contar as perguntas que já foram feitas
         inc_acerto = 0
         inc_erro = 0
 
@@ -36,15 +37,16 @@ def exec_nivel(): # Função que executa a logica do código
 
         print("Sua questao: {}".format(nome_nivel))
         for q2 in range(3):
-            questao = selecionar_questao(arquivo_json)
+            questao = anallise_repet(arquivo_json,list_quest_repet)
 
             try:
                 pergunta_q = float(input("{q} - {pergunta} ".format(q = q2+1, pergunta = questao["pergunta"])))
 
-
             except ValueError:
                 print("Digite uma resposta numérica válida!")
                 continue
+            
+            list_quest_repet.append(questao["id"])
 
             if pergunta_q == questao["resposta"]:
                 print("Acerto!")
@@ -53,15 +55,16 @@ def exec_nivel(): # Função que executa a logica do código
             else:
                 print("Erro!")
                 inc_erro = inc_erro + 1
-
+                
             print("Acertos: {}".format(inc_acerto))
             print("Erros: {}".format(inc_erro))
 
         atualizacao = receber_nivel(atualizacao, inc_acerto)
 
+        
+        
         if inc_acerto >= 2:
             print("Parabens! Você passou para a fase: {}".format([q2][0]))
-
 
 def receber_nivel(atualizacao, inc_acerto):
 
@@ -94,8 +97,29 @@ def carregar_questoes(arquivo_json):
 
     return dados["questoes"]
 
-def selecionar_questao(arquivo_json):
+def selecionar_questao(arquivo_json): # Função para o tratamento de questões dentro do código
+                                      # com o objetivo de não repeti-las 
     questoes = carregar_questoes(arquivo_json)
     questao = random.choice(questoes)
 
     return questao
+
+def anallise_repet(arquivo_json, list_arq_repet):
+    questoes = carregar_questoes(arquivo_json)
+    questoes_disp = []
+
+    for q in questoes:
+        if q["id"] not in list_arq_repet:
+            questoes_disp.append(q)
+
+    if not questoes_disp:
+        return None
+
+    questoes_novas = random.choice(questoes_disp)
+
+    return questoes_novas
+    
+
+
+
+
