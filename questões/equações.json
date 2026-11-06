@@ -1,23 +1,64 @@
 {
-    "nivel": "equacoes",
     "questoes": [
         {
             "id": 1,
-            "pergunta": "Resolva: x + 8 = 15. Qual o valor de x?",
-            "resposta": 7,
-            "dificuldade": "facil"
+            "pergunta": "Resolva: x + 8 = 15. Qual é o valor de x?",
+            "resposta": 7
         },
         {
             "id": 2,
-            "pergunta": "Resolva: 3x = 27. Qual o valor de x?",
-            "resposta": 9,
-            "dificuldade": "facil"
+            "pergunta": "Resolva: x - 6 = 11. Qual é o valor de x?",
+            "resposta": 17
         },
         {
             "id": 3,
-            "pergunta": "Resolva: 2x + 5 = 21. Qual o valor de x?",
-            "resposta": 8,
-            "dificuldade": "medio"
+            "pergunta": "Resolva: 3x = 24. Qual é o valor de x?",
+            "resposta": 8
+        },
+        {
+            "id": 4,
+            "pergunta": "Resolva: x ÷ 4 = 6. Qual é o valor de x?",
+            "resposta": 24
+        },
+        {
+            "id": 5,
+            "pergunta": "Resolva: 2x + 5 = 17. Qual é o valor de x?",
+            "resposta": 6
+        },
+        {
+            "id": 6,
+            "pergunta": "Resolva: 5x - 10 = 20. Qual é o valor de x?",
+            "resposta": 6
+        },
+        {
+            "id": 7,
+            "pergunta": "Resolva: 4x + 3 = 31. Qual é o valor de x?",
+            "resposta": 7
+        },
+        {
+            "id": 8,
+            "pergunta": "Resolva: 3x - 7 = 14. Qual é o valor de x?",
+            "resposta": 7
+        },
+        {
+            "id": 9,
+            "pergunta": "Resolva: 2(x + 4) = 18. Qual é o valor de x?",
+            "resposta": 5
+        },
+        {
+            "id": 10,
+            "pergunta": "Resolva: 6x + 2 = 38. Qual é o valor de x?",
+            "resposta": 6
+        },
+        {
+            "id": 11,
+            "pergunta": "Resolva: 7x - 9 = 26. Qual é o valor de x?",
+            "resposta": 5
+        },
+        {
+            "id": 12,
+            "pergunta": "Resolva: 5(x - 2) = 35. Qual é o valor de x?",
+            "resposta": 9
         }
     ]
 }
