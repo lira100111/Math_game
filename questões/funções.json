@@ -1,23 +1,64 @@
 {
-    "nivel": "funcoes",
     "questoes": [
         {
             "id": 1,
-            "pergunta": "Dada a função f(x) = 2x + 3, qual é o valor de f(4)?",
-            "resposta": 11,
-            "dificuldade": "facil"
+            "pergunta": "Dada f(x) = 2x + 3, calcule f(4).",
+            "resposta": 11
         },
         {
             "id": 2,
-            "pergunta": "Dada a função f(x) = 3x - 5, qual é o valor de f(5)?",
-            "resposta": 10,
-            "dificuldade": "facil"
+            "pergunta": "Dada f(x) = 5x - 1, calcule f(3).",
+            "resposta": 14
         },
         {
             "id": 3,
-            "pergunta": "Dada a função f(x) = x² + 2x, qual é o valor de f(3)?",
-            "resposta": 15,
-            "dificuldade": "medio"
+            "pergunta": "Dada f(x) = x², calcule f(6).",
+            "resposta": 36
+        },
+        {
+            "id": 4,
+            "pergunta": "Dada f(x) = 3x + 2, calcule f(5).",
+            "resposta": 17
+        },
+        {
+            "id": 5,
+            "pergunta": "Dada f(x) = x² + 1, calcule f(4).",
+            "resposta": 17
+        },
+        {
+            "id": 6,
+            "pergunta": "Dada f(x) = 10 - 2x, calcule f(3).",
+            "resposta": 4
+        },
+        {
+            "id": 7,
+            "pergunta": "Dada f(x) = 4x - 7, calcule f(2).",
+            "resposta": 1
+        },
+        {
+            "id": 8,
+            "pergunta": "Dada f(x) = x² - 4, calcule f(5).",
+            "resposta": 21
+        },
+        {
+            "id": 9,
+            "pergunta": "Dada f(x) = 3x², calcule f(2).",
+            "resposta": 12
+        },
+        {
+            "id": 10,
+            "pergunta": "Dada f(x) = 2(x + 1), calcule f(6).",
+            "resposta": 14
+        },
+        {
+            "id": 11,
+            "pergunta": "Dada f(x) = 20 ÷ x, calcule f(4).",
+            "resposta": 5
+        },
+        {
+            "id": 12,
+            "pergunta": "Dada f(x) = x² + 2x, calcule f(3).",
+            "resposta": 15
         }
     ]
 }
